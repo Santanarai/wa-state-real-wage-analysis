@@ -1,0 +1,101 @@
+series_id,series_name,year,annual_average,n_readings,expected_readings,complete
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2000,179.5,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2001,185.883,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2002,189.5,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2003,192.4,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2004,194.883,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2005,200.467,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2006,207.983,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2007,216.059,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2008,224.872,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2009,226.154,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2010,226.746,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2011,233.097,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2012,238.796,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2013,241.692,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2014,246.186,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2015,249.594,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2016,255.254,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2017,263.109,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2018,271.41,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2019,278.182,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2020,282.746,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2021,296.875,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2022,323.453,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2023,341.772,6,6,True
+CUURS49DSA0,CPI-U Seattle-Tacoma-Bellevue,2024,353.892,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2000,174.883,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2001,180.933,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2002,184.183,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2003,186.7,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2004,189.8,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2005,195.567,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2006,202.933,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2007,210.672,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2008,219.795,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2009,220.845,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2010,222.465,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2011,229.788,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2012,235.399,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2013,238.273,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2014,242.846,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2015,245.13,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2016,250.838,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2017,259.306,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2018,267.85,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2019,273.459,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2020,278.557,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2021,292.921,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2022,318.62,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2023,335.83,6,6,True
+CWURS49DSA0,CPI-W Seattle-Tacoma-Bellevue,2024,347.483,6,6,True
+CUUR0000SA0,CPI-U National (US City Average),2000,172.2,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2001,177.067,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2002,179.875,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2003,183.958,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2004,188.883,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2005,195.292,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2006,201.592,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2007,207.342,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2008,215.302,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2009,214.537,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2010,218.055,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2011,224.939,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2012,229.594,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2013,232.957,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2014,236.736,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2015,237.017,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2016,240.007,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2017,245.12,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2018,251.107,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2019,255.657,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2020,258.811,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2021,270.97,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2022,292.655,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2023,304.702,12,12,True
+CUUR0000SA0,CPI-U National (US City Average),2024,313.689,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2000,168.892,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2001,173.517,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2002,175.875,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2003,179.808,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2004,184.483,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2005,190.975,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2006,197.142,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2007,202.767,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2008,211.053,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2009,209.63,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2010,213.967,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2011,221.575,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2012,226.229,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2013,229.324,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2014,232.77,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2015,231.81,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2016,234.076,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2017,239.051,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2018,245.146,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2019,249.221,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2020,252.248,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2021,265.51,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2022,287.984,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2023,298.99,12,12,True
+CWUR0000SA0,CPI-W National (US City Average),2024,307.552,12,12,True

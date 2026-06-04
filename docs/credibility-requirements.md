@@ -41,6 +41,29 @@ The employer and right-leaning analysts will make these moves. The analysis must
 3. **"Government workers have job security and pensions"**: Acknowledge these as real forms of compensation without conceding that they offset the wage gap. Note that PERS Plan 2 has no automatic COLA for retirees
 4. **"CPI-U overstates inflation for some groups"**: Show results using both CPI-U and CPI-W; note the Seattle-area vs. national distinction
 
+## Wolfram Cross-Checks
+
+Each validation cell that computes a key number should include a Wolfram|Alpha or Wolfram Language cross-check. The purpose is **independent computation** — a second system producing the same result from the same inputs — not "AI verifying AI." The reader can reproduce every check themselves.
+
+### Structure of a cross-check block
+
+Each cross-check is a visible code cell in the notebook (not a hidden step) that prints a formatted block containing:
+
+1. **Query or expression** — The exact Wolfram|Alpha natural-language query or Wolfram Language code
+2. **Wolfram result** — The value returned by Wolfram (hardcoded after manual verification)
+3. **Our computed value** — The corresponding Python-computed value
+4. **Difference** — Absolute and percentage difference
+5. **Reader verification URL** — A wolframalpha.com link the reader can click to reproduce
+
+### When to use each tool
+
+- **Wolfram|Alpha** (natural language): For spot-checking individual data points (e.g., `"$100 in 2000 dollars in 2024"`) and cumulative inflation over known periods. Wolfram|Alpha uses national CPI-U; it does not carry Seattle MSA series. Use it for national cross-checks and dollar-equivalent sanity checks.
+- **Wolfram Language** (WolframLanguageEvaluator): For independently recomputing derived quantities — chained indices, cumulative rates, year-over-year rates. Feed the same annual averages from our BLS retrieval and confirm the Wolfram Language kernel produces identical results to Python.
+
+### What this does NOT claim
+
+Per the "No AI-Verified-by-AI" rule: these cross-checks demonstrate that **two independent computation engines (Python and Wolfram) agree**, and provide the reader with clickable URLs to reproduce every check. They do not claim that Wolfram "verified" or "approved" the analysis.
+
 ## Chart Standards
 
 - Publication-ready: clear labels, titles, axis descriptions

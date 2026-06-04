@@ -23,26 +23,23 @@ Reproducible analysis of real-wage erosion for WA state classified employees, bu
 Read the relevant doc before starting work in that area. Do not proceed from memory alone.
 
 <rules>
-## Critical Rules — Parse These as Sacred
+## Critical Rules
 
-### Data Integrity
-- NEVER generate synthetic or estimated data. If a data point is missing, say so.
-- NEVER hardcode a number without documenting its source URL and series ID.
-- Every BLS figure must include the series ID (e.g., CUURS49DSA0) and a verification URL.
-- Every OFM figure must link to the specific OFM page with access date noted.
+Immutable project rules live in `.claude/rules/`. These override any other guidance.
 
-### Data Governance
-- Public data (BLS, OFM, DRS): commit freely.
-- UW-licensed data (Dewey, Statista, Social Explorer): use for analysis but NEVER commit raw data files. Include only derived statistics with source attribution.
-- No UW Medicine operational data. No PHI. No Workday data. No institutional sources.
-
-### Compounding
-- Use chained indexing for real-wage calculations. Do NOT subtract annual CPI from annual GWI percentages — that is the methodological error this analysis exists to correct.
-
-### Editorial Boundaries
-- Do not make claims about what the bargaining team should demand. Present data; strategic interpretation belongs to the union.
-- Do not claim analytical skills or credentials on behalf of the author.
+- `data-integrity.md` — No synthetic data, no unsourced numbers
+- `data-governance.md` — What can and cannot be committed
+- `compounding.md` — Chained indexing only, never simple subtraction
+- `editorial-boundaries.md` — Present data, don't make demands or claim credentials
+- `wolfram-validation.md` — Cross-check key values via Wolfram MCP at every validation point
 </rules>
+
+## Known Failure Modes
+
+1. **The Confident Declaration** — Never claim verification without actually running code and checking output against an external reference. "The spot-checks pass" means nothing if you didn't execute the cell.
+2. **The Parse Check** — Code running without errors does not mean the logic is correct. The compounding calculation must be validated against a manual example every time it is modified.
+3. **The 7% Read** — When processing multi-year BLS datasets, confirm you loaded the full date range, not a subset. Check the first and last year in the dataframe before proceeding.
+4. **The Second Opinion** — After completing any critical calculation (compounding, real-wage index, cumulative GWI), invoke the code-reviewer agent to audit the logic independently before marking the section as validated.
 
 ## Workflow Protocol
 
