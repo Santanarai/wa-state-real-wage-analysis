@@ -15,7 +15,7 @@ Reproducible analysis of real-wage erosion for WA state classified employees, bu
 - `docs/credibility-requirements.md` — Source citation, verification, and reproducibility standards
 - `docs/data-governance.md` — What goes in the repo vs. what doesn't, UW license constraints
 - **Notion Project Hub** — `WA Real-Wage Erosion Analysis — Project Hub`
-  (NOTION_HUB_URL_REDACTED)
+  (URL in `.claude/config.local` as `NOTION_HUB_URL`)
   Contains methodology decisions, counterargument prep, key reference numbers,
   and session log. Read this page at the start of every session for strategic
   context that isn't in the repo files.
