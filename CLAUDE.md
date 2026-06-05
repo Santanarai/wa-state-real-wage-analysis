@@ -73,6 +73,19 @@ Update this file, do not append — it should always reflect the current state.
 - No API keys or credentials in the repo
 - Use `ultrathink` for critical calculations (compounding, real-wage index). It is parsed deterministically by the harness; "think deeply" is not.
 
+### Local Setup
+```
+python -m venv .venv
+.venv\Scripts\activate        # Windows
+source .venv/bin/activate     # macOS/Linux
+pip install -r requirements.txt
+```
+Optional — register the Jupyter kernel for local notebook use:
+```
+python -m ipykernel install --user --name=wa-real-wage --display-name "WA Real-Wage Analysis"
+```
+Claude Code sessions should run `pip install -r requirements.txt` at session start to match the pinned environment.
+
 ## Repository Structure
 ```
 wa-state-real-wage-analysis/
