@@ -1,0 +1,28 @@
+year,effective_dates,gwi_components,annual_factor,gwi_pct_effective,notes
+2000,2000-07-01,3.00%,1.03,3.0,Across the Board (part of budget bill)
+2001,2001-07-01,3.70%,1.037,3.7,Across the Board (part of budget bill)
+2002,,0.00%,1.0,0.0,No General Increase
+2003,,0.00%,1.0,0.0,No General Increase
+2004,,0.00%,1.0,0.0,No General Increase
+2005,2005-07-01,3.20%,1.032,3.2,CBA negotiated by the Governor's Office
+2006,2006-07-01,1.60%,1.016,1.6,CBA negotiated by the Governor's Office
+2007,2007-07-01,3.20%,1.032,3.2,CBA negotiated by the Governor's Office
+2008,2008-07-01,2.00%,1.02,2.0,CBA negotiated by the Governor's Office
+2009,,0.00%,1.0,0.0,No General Increase
+2010,,0.00%,1.0,0.0,No General Increase
+2011,2011-07-01,-3.00%,0.97,-3.0,"Temporary salary reduction (ESSB 5860), effective through June 29, 2013"
+2012,,0.00%,1.0,0.0,Salary reduction still in effect; no additional change
+2013,2013-06-30,3.00%,1.03,3.0,"Restore temporary salary reduction; no additional GWI (July 1, 2013 = 0%)"
+2014,,0.00%,1.0,0.0,No General Increase
+2015,2015-07-01,3.00%,1.03,3.0,CBA negotiated; also created new Step M
+2016,2016-07-01,1.80%,1.018,1.8,"1.80% or 1% plus $20/mo, whichever is greater; 1.80% used (see Instruction)"
+2017,2017-07-01,2.00%,1.02,2.0,CBA negotiated
+2018,2018-07-01,2.00%,1.02,2.0,CBA negotiated
+2019,"2019-01-01, 2019-07-01",2.00% + 3.00%,1.0506,5.06,Jan 1: 2.00% mid-biennium + July 1: 3.00% new biennium (compounded)
+2020,2020-07-01,3.00%,1.03,3.0,"Governor's Directive 20-08; WFSE received in 2020, not 2021"
+2021,,0.00%,1.0,0.0,No GWI; already received increase in 2020 per Directive 20-08
+2022,2022-07-01,3.25%,1.0325,3.25,2021-23 CBA re-opener
+2023,2023-07-01,4.00%,1.04,4.0,2023-25 CBA negotiated
+2024,2024-07-01,3.00%,1.03,3.0,2023-25 CBA negotiated
+2025,2025-07-01,3.00%,1.03,3.0,2025-27 CBA negotiated (current contract)
+2026,2026-07-01,2.00%,1.02,2.0,2025-27 CBA negotiated (current contract)

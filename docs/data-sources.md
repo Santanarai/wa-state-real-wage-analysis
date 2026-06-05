@@ -15,7 +15,13 @@
 - Always cite the exact series ID in code comments and notebook markdown
 
 ### OFM Compensation Data
-- **General Wage Increase history**: Published on OFM's compensation/collective bargaining page. Document exact URL and access date.
+- **General Wage Increase history**: Published on OFM's compensation/collective bargaining page.
+  - Page: https://ofm.wa.gov/state-human-resources/compensation-job-classes/compensation-administration/general-wage-adjustment
+  - Data: https://ofm.wa.gov/state-human-resources/workforce-data-planning/workforce-data-trends/compensation/wage-adjustments-and-salary-increases
+  - PDF: `Legislative_GenWageAdjustments_History.pdf` (revised May 14, 2026)
+  - Employee group used: WFSE General Government
+  - Date range: 2000–2026 (27 years, both ATB and CBA-negotiated)
+  - Accessed: 2026-06-05
 - **Salary schedules**: Published pay ranges by classification and range/step. Document exact URL.
 - **WSECS (WA State Employee Compensation Survey)**: June 2024 final report. Key findings: -18.2% base salary lag, -15.3% total compensation lag. Cite the FINAL report, not the May 2024 draft (which showed -16.5%).
 
