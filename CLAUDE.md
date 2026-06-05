@@ -71,6 +71,7 @@ Update this file, do not append — it should always reflect the current state.
 - All dependencies in requirements.txt
 - Charts must be publication-ready with source citations on every figure
 - No API keys or credentials in the repo
+- Use `ultrathink` for critical calculations (compounding, real-wage index). It is parsed deterministically by the harness; "think deeply" is not.
 
 ## Repository Structure
 ```
