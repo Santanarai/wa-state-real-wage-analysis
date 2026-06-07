@@ -93,6 +93,7 @@ wa-state-real-wage-analysis/
 ├── README.md
 ├── requirements.txt
 ├── SESSION_STATE.md
+├── SESSION_HISTORY.md
 ├── docs/
 │   ├── data-sources.md
 │   ├── documentation-pattern.md
