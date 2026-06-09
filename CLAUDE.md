@@ -27,8 +27,8 @@ Immutable project rules live in `.claude/rules/`. These override any other guida
 - `compounding.md` — Chained indexing only, never simple subtraction
 - `editorial-boundaries.md` — Present data, don't make demands or claim credentials
 - `wolfram-validation.md` — Cross-check key values via Wolfram MCP at every validation point
-- `context-efficiency.md` — Targeted file reads; no full-file dumps
-- `session-state.md` — SESSION_STATE.md is session-end only; update only during /wrapup
+- `context-efficiency.md` — Targeted file reads; no full-file dumps. Includes failure pattern for over-reading and guidance on post-compaction checks
+- `session-state.md` — SESSION_STATE.md is session-end only; update only during /wrapup. Includes Session State Drift failure pattern and crash-protection alternatives
 </rules>
 
 ## Known Failure Modes
