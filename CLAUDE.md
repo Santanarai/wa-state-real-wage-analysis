@@ -15,7 +15,7 @@ Reproducible analysis of real-wage erosion for WA state classified employees, bu
 - `docs/credibility-requirements.md` — Source citation, verification, and reproducibility standards
 - `docs/data-governance.md` — What goes in the repo vs. what doesn't, UW license constraints
 - **Notion Project Hub** — `WA Real-Wage Erosion Analysis — Project Hub`
-  (URL in `.claude/config.local` as `NOTION_HUB_URL`)
+  (URL in `.claude/config.local` as `NOTION_HUB_URL`; also contains `NOTION_BEST_PRACTICES_URL`)
   Contains methodology decisions, counterargument prep, key reference numbers,
   and session log. Read this page at the start of every session for strategic
   context that isn't in the repo files.
@@ -32,6 +32,8 @@ Immutable project rules live in `.claude/rules/`. These override any other guida
 - `compounding.md` — Chained indexing only, never simple subtraction
 - `editorial-boundaries.md` — Present data, don't make demands or claim credentials
 - `wolfram-validation.md` — Cross-check key values via Wolfram MCP at every validation point
+- `context-efficiency.md` — Targeted file reads; no full-file dumps
+- `notion-coordination.md` — Notion updates are manual only (/checkpoint, /wrapup); SESSION_STATE.md is session-end only
 </rules>
 
 ## Known Failure Modes
@@ -65,6 +67,15 @@ Before ending any session, write a `SESSION_STATE.md` file to the repo root cont
 Update this file, do not append — it should always reflect the current state.
 </session_protocol>
 
+### Session Commands
+
+Available via `.claude/commands/` (invoked as slash commands):
+
+- `rampup.md` — Session startup checklist (read docs, install deps, orient)
+- `checkpoint.md` — Mid-session sync to Notion project hub
+- `sync.md` — Read Notion project hub for updates from the strategy thread
+- `wrapup.md` — Session-end protocol (SESSION_STATE.md, Notion, commit)
+
 ## Technical Stack
 - Python 3.x, pandas, matplotlib/seaborn
 - Jupyter notebook (.ipynb) as primary artifact
@@ -89,11 +100,31 @@ Claude Code sessions should run `pip install -r requirements.txt` at session sta
 ## Repository Structure
 ```
 wa-state-real-wage-analysis/
+├── .claude/
+│   ├── config.local              # Notion URLs (not committed)
+│   ├── commands/                 # Session slash commands
+│   │   ├── checkpoint.md
+│   │   ├── rampup.md
+│   │   ├── sync.md
+│   │   └── wrapup.md
+│   └── rules/                   # Immutable project rules
+│       ├── compounding.md
+│       ├── context-efficiency.md
+│       ├── data-governance.md
+│       ├── data-integrity.md
+│       ├── editorial-boundaries.md
+│       ├── notion-coordination.md
+│       └── wolfram-validation.md
+├── .gitattributes
+├── .gitignore
 ├── CLAUDE.md
 ├── README.md
 ├── requirements.txt
 ├── SESSION_STATE.md
 ├── SESSION_HISTORY.md
+├── lessons.md                    # Recurring mistake log
+├── todo/
+│   └── observations.md
 ├── docs/
 │   ├── data-sources.md
 │   ├── documentation-pattern.md
@@ -101,11 +132,22 @@ wa-state-real-wage-analysis/
 │   └── data-governance.md
 ├── data/
 │   ├── raw/
+│   │   ├── bls_cpi_raw_records.csv
+│   │   └── ofm_gwi_raw.csv
 │   └── processed/
+│       ├── cpi_annual_averages.csv
+│       ├── cpi_chained_indices.csv
+│       ├── cpi_inflation_rates.csv
+│       ├── gwi_chained_indices.csv
+│       └── real_wage_index.csv
 ├── notebooks/
 │   └── real-wage-analysis.ipynb
 └── output/
-    ├── charts/
+    ├── charts/                   # Publication-ready figures
+    │   ├── fig1_wage_vs_price_divergence.png
+    │   ├── fig2_real_wage_index_2000.png
+    │   ├── fig3_annual_real_wage_change.png
+    │   └── fig4_recent_cycle_2020.png
     └── brief/
 ```
 
