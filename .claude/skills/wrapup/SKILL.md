@@ -1,3 +1,8 @@
+---
+name: wrapup
+description: Session end — archives state, syncs to Notion, commits all work
+disable-model-invocation: true
+---
 Session is ending. Complete the following before stopping:
 
 1. **Archive session state.** Append the full contents of `SESSION_STATE.md` to `SESSION_HISTORY.md`, preceded by a line: `--- Session [N] closed [date] ---`. This preserves the detailed session state before it gets overwritten.

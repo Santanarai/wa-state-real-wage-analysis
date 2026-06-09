@@ -69,12 +69,12 @@ Update this file, do not append — it should always reflect the current state.
 
 ### Session Commands
 
-Available via `.claude/commands/` (invoked as slash commands):
+Available via `.claude/skills/` (invoked as `/rampup`, `/checkpoint`, etc.):
 
-- `rampup.md` — Session startup checklist (read docs, install deps, orient)
-- `checkpoint.md` — Mid-session sync to Notion project hub
-- `sync.md` — Read Notion project hub for updates from the strategy thread
-- `wrapup.md` — Session-end protocol (SESSION_STATE.md, Notion, commit)
+- `rampup/SKILL.md` — Session startup checklist (read docs, orient)
+- `checkpoint/SKILL.md` — Mid-session sync to Notion project hub
+- `sync/SKILL.md` — Read Notion project hub for updates from the strategy thread
+- `wrapup/SKILL.md` — Session-end protocol (SESSION_STATE.md, Notion, commit)
 
 ## Technical Stack
 - Python 3.x, pandas, matplotlib/seaborn
@@ -102,11 +102,11 @@ Claude Code sessions should run `pip install -r requirements.txt` at session sta
 wa-state-real-wage-analysis/
 ├── .claude/
 │   ├── config.local              # Notion URLs (not committed)
-│   ├── commands/                 # Session slash commands
-│   │   ├── checkpoint.md
-│   │   ├── rampup.md
-│   │   ├── sync.md
-│   │   └── wrapup.md
+│   ├── skills/                   # Session lifecycle skills
+│   │   ├── checkpoint/SKILL.md
+│   │   ├── rampup/SKILL.md
+│   │   ├── sync/SKILL.md
+│   │   └── wrapup/SKILL.md
 │   └── rules/                   # Immutable project rules
 │       ├── compounding.md
 │       ├── context-efficiency.md

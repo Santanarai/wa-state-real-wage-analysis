@@ -1,3 +1,8 @@
+---
+name: rampup
+description: Session initialization — loads project context before work begins
+disable-model-invocation: true
+---
 Read the following in order, then confirm you're oriented:
 
 1. `CLAUDE.md` in the repo root — project rules and constraints
