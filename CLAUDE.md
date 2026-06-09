@@ -14,11 +14,6 @@ Reproducible analysis of real-wage erosion for WA state classified employees, bu
 - `docs/documentation-pattern.md` — Five-part notebook cell structure
 - `docs/credibility-requirements.md` — Source citation, verification, and reproducibility standards
 - `docs/data-governance.md` — What goes in the repo vs. what doesn't, UW license constraints
-- **Notion Project Hub** — `WA Real-Wage Erosion Analysis — Project Hub`
-  (URL in `.claude/config.local` as `NOTION_HUB_URL`; also contains `NOTION_BEST_PRACTICES_URL`)
-  Contains methodology decisions, counterargument prep, key reference numbers,
-  and session log. Read this page at the start of every session for strategic
-  context that isn't in the repo files.
 
 Read the relevant doc before starting work in that area. Do not proceed from memory alone.
 
@@ -33,7 +28,7 @@ Immutable project rules live in `.claude/rules/`. These override any other guida
 - `editorial-boundaries.md` — Present data, don't make demands or claim credentials
 - `wolfram-validation.md` — Cross-check key values via Wolfram MCP at every validation point
 - `context-efficiency.md` — Targeted file reads; no full-file dumps
-- `notion-coordination.md` — Notion updates are manual only (/checkpoint, /wrapup); SESSION_STATE.md is session-end only
+- `session-state.md` — SESSION_STATE.md is session-end only; update only during /wrapup
 </rules>
 
 ## Known Failure Modes
@@ -69,12 +64,10 @@ Update this file, do not append — it should always reflect the current state.
 
 ### Session Commands
 
-Available via `.claude/skills/` (invoked as `/rampup`, `/checkpoint`, etc.):
+Available via `.claude/skills/` (invoked as `/rampup`, `/wrapup`):
 
-- `rampup/SKILL.md` — Session startup checklist (read docs, orient)
-- `checkpoint/SKILL.md` — Mid-session sync to Notion project hub
-- `sync/SKILL.md` — Read Notion project hub for updates from the strategy thread
-- `wrapup/SKILL.md` — Session-end protocol (SESSION_STATE.md, Notion, commit)
+- `rampup/SKILL.md` — Session startup checklist (read CLAUDE.md + SESSION_STATE.md, orient)
+- `wrapup/SKILL.md` — Session-end protocol (archive to SESSION_HISTORY.md, update SESSION_STATE.md, commit)
 
 ## Technical Stack
 - Python 3.x, pandas, matplotlib/seaborn
@@ -101,11 +94,8 @@ Claude Code sessions should run `pip install -r requirements.txt` at session sta
 ```
 wa-state-real-wage-analysis/
 ├── .claude/
-│   ├── config.local              # Notion URLs (not committed)
 │   ├── skills/                   # Session lifecycle skills
-│   │   ├── checkpoint/SKILL.md
 │   │   ├── rampup/SKILL.md
-│   │   ├── sync/SKILL.md
 │   │   └── wrapup/SKILL.md
 │   └── rules/                   # Immutable project rules
 │       ├── compounding.md
@@ -113,7 +103,7 @@ wa-state-real-wage-analysis/
 │       ├── data-governance.md
 │       ├── data-integrity.md
 │       ├── editorial-boundaries.md
-│       ├── notion-coordination.md
+│       ├── session-state.md
 │       └── wolfram-validation.md
 ├── .gitattributes
 ├── .gitignore
