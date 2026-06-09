@@ -28,7 +28,7 @@ Immutable project rules live in `.claude/rules/`. These override any other guida
 - `editorial-boundaries.md` — Present data, don't make demands or claim credentials
 - `wolfram-validation.md` — Cross-check key values via Wolfram MCP at every validation point
 - `context-efficiency.md` — Targeted file reads; no full-file dumps. Includes failure pattern for over-reading and guidance on post-compaction checks
-- `session-state.md` — SESSION_STATE.md is session-end only; update only during /wrapup. Includes Session State Drift failure pattern and crash-protection alternatives
+- `session-state.md` — SESSION_STATE.md lifecycle: session start (orient), mid-session (hands off), session end (archive + overwrite + commit). Includes Session State Drift failure pattern
 </rules>
 
 ## Known Failure Modes
@@ -39,6 +39,8 @@ Immutable project rules live in `.claude/rules/`. These override any other guida
 4. **The Second Opinion** — After completing any critical calculation (compounding, real-wage index, cumulative GWI), invoke the code-reviewer agent to audit the logic independently before marking the section as validated.
 
 ## Workflow Protocol
+
+At session start, read `CLAUDE.md` and `SESSION_STATE.md` before writing any code.
 
 <plan_first>
 ### Before Writing Any Code Cell
@@ -61,13 +63,6 @@ Before ending any session, write a `SESSION_STATE.md` file to the repo root cont
 
 Update this file, do not append — it should always reflect the current state.
 </session_protocol>
-
-### Session Commands
-
-Available via `.claude/skills/` (invoked as `/rampup`, `/wrapup`):
-
-- `rampup/SKILL.md` — Session startup checklist (read CLAUDE.md + SESSION_STATE.md, orient)
-- `wrapup/SKILL.md` — Session-end protocol (archive to SESSION_HISTORY.md, update SESSION_STATE.md, commit)
 
 ## Technical Stack
 - Python 3.x, pandas, matplotlib/seaborn
@@ -94,9 +89,6 @@ Claude Code sessions should run `pip install -r requirements.txt` at session sta
 ```
 wa-state-real-wage-analysis/
 ├── .claude/
-│   ├── skills/                   # Session lifecycle skills
-│   │   ├── rampup/SKILL.md
-│   │   └── wrapup/SKILL.md
 │   └── rules/                   # Immutable project rules
 │       ├── compounding.md
 │       ├── context-efficiency.md
