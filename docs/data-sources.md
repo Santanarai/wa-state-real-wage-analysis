@@ -23,7 +23,7 @@
   - Date range: 2000–2026 (27 years, both ATB and CBA-negotiated)
   - Accessed: 2026-06-05
 - **Salary schedules**: Published pay ranges by classification and range/step. Document exact URL.
-- **WSECS (WA State Employee Compensation Survey)**: June 2024 final report. Key findings: -18.2% base salary lag, -15.3% total compensation lag. Cite the FINAL report, not the May 2024 draft (which showed -16.5%).
+- **WSECS (WA State Employee Compensation Survey)**: June 2024 final report. 198 benchmark jobs (181 reportable). Key findings: -18.2% base salary lag, -15.3% total compensation lag. Cite the FINAL report, not the May 2024 draft (which showed -16.5%).
 
 ### WA DRS / Office of the State Actuary
 - PERS Plan 2 data for pension/COLA context if the analysis extends there
