@@ -21,8 +21,8 @@ All datasets below are accessible via UW institutional subscription (download-le
 This dataset was not in the original search brief but is the single most valuable find for this project.
 
 ### Coverage
-- **Geographic:** US national, state-level, MSA-level, and non-metro areas. Washington State and Seattle-Tacoma MSA are directly available via `BQ_AREA_TYPE` (2=State, 4=MSA) and `BQ_ADDRESS_STATE`.
-- **Temporal:** 2010 to present (time series). Misses 2000–2009.
+- **Geographic:** US national, state-level, MSA-level, and non-metro areas. Washington State and Seattle-Tacoma MSA (CBSA 42660) are available via `BQ_AREA_TYPE` (2=State, 4=MSA) and `BQ_AREA_CD`. **Note:** `BQ_ADDRESS_STATE` is ~69% null — do not rely on it for geographic filtering; use `BQ_AREA_CD` or `BQ_AREA_DESCRIPTION` instead.
+- **Temporal:** 2011–2023 (13 years, per schema metadata). Misses 2000–2010.
 - **Rows:** 25.5M | **Format:** CSV | **Refresh:** Monthly
 
 ### Key Variables
@@ -31,7 +31,7 @@ This dataset was not in the original search brief but is the single most valuabl
 - **Mean wages:** hourly and annual, with percent relative standard error
 - **Employment estimates** and location quotients
 - **NAICS industry breakdown** at multiple levels
-- **Ownership type (`BQ_OCC_OWNERSHIP_CD`):** 2=State Government, 3=Local Government, 5=Private, and combinations
+- **Ownership type (`BQ_OCC_OWNERSHIP_CD`):** 1=Federal, 2=State Government, 3=Local Government, 5=Private, and combined codes (1235=all sectors, 235, 35, 57, 58, 59). Stored as TEXT, not categorical — combined codes dominate the dataset. See `docs/brightquery-sampling-results.md` for sampling details.
 
 ### Why This Matters
 The ownership-type field is the critical differentiator. This dataset enables direct comparisons like:
@@ -42,7 +42,8 @@ This is precisely the OFM/WSECS market-lag argument quantified at the occupation
 
 ### Limitations
 - Derived from BLS Occupational Employment and Wage Statistics (OEWS) — the underlying data is public. BrightQuery's value-add is normalization, time-series formatting, and convenience.
-- Starts 2010, so cannot cover the full 2000–2024 window for the core analysis.
+- Starts 2011, so cannot cover the full 2000–2024 window for the core analysis.
+- **Dewey sampling limitation:** The `sample_dataset` tool returns a fixed, deterministic 100-row sample (not random). Repeated calls return identical rows. Cannot surface Seattle-specific or state-government-specific data through sampling alone. See `docs/brightquery-sampling-results.md` for full sampling analysis and recommendation to use BLS OEWS public data directly.
 - OEWS is a survey of establishments; self-employed workers are excluded.
 - SOC codes don't map 1:1 to WA state classified job titles — crosswalking is needed.
 
