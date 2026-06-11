@@ -183,3 +183,6 @@ cython_debug/
 
 # Local config with private URLs
 .claude/config.local
+
+# Dewey/UW-licensed data (Tier 2 — never commit raw data)
+data/dewey/
